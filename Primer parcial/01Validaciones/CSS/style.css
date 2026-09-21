@@ -14,7 +14,7 @@ body {
     padding: 30px;
 }
 .header {
-    background-color: #0f172a;
+    background-color: #c1a0ac;
     color: white;
     padding: 25px;
     text-align: center;
@@ -30,7 +30,7 @@ body {
     margin-top: 20px;
 }
 .table_content {
-    background-color: white;
+    background-color: #c1a0ac;
     padding: 20px;
     border-radius: 10px;
 }
@@ -45,7 +45,7 @@ body {
     text-align: left;
 }
 .tabla th {
-    background-color: #0f172a;
+    background-color: #c1a0ac;
     color: white;
 }
 .tabla a {
@@ -58,7 +58,7 @@ body {
 }
 /*Cambios en la interfaz de talleres*/
 header {
-    background-color: #0f172a;
+    background-color: #c1a0ac;
     color: white;
     padding: 1.5rem;
     text-align: center;
@@ -101,7 +101,7 @@ footer {
 }
 /*cambios en el registro del formulario*/
 .formulario-registro {
-    background-color: white;
+    background-color: #c1a0ac;
     max-width: 500px;
     margin: 30px auto;
     padding: 25px;
@@ -130,19 +130,19 @@ footer {
     background-color: #334155;
 }
 .registro-fallido {
-    color: #b91c1c;
+    color: #e5e7ed;
     background-color: #fee2e2;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
 }
 .formulario-registro input.invalido {
-    border: 2px solid #dc2626;
+    border: 2px solid #e5e7ed;
     background-color: #fef2f2;
 }
 .error {
     display: block;
-    color: #dc2626;
+    color: #e5e7ed;
     font-size: 14px;
     margin-top: -10px;
     margin-bottom: 10px;
