@@ -21,9 +21,14 @@ for(const [campo,valor] of Object.entries(taller)){
 console.log('${campo}: ${valor}');
 }
 // TODO: JSON.stringify — convierte `taller` a texto (guárdalo en `textoJson`) e imprímelo
-console.log ('Manejo de conversión ')
-const textoJson =JSON.stringify(taller, null, 2);
+console.log('Manejo de conversion de objeto a string')
+const tectoJson = JSON.stringify(taller, null, 2);
 console.log(textoJson);
-console.log('tipo: ', typeof testoJson);
+console.log('tipo: ', typeof textoJson);
 // TODO: JSON.parse — convierte `textoJson` de vuelta a objeto (guárdalo en `objetoDeVuelta`)
 //       e imprime `objetoDeVuelta.nombre`
+console.log('Inverso de cadena a JSON')
+const objetoDeVuelta =JSON.parse(textoJson);
+console.log('tipo: ', typeof objetoDeVuelta);
+console.log(objetoDeVuelta.nombre);
+console.log('${campo}: ${valor}');
