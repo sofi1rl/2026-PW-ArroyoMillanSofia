@@ -15,20 +15,22 @@ console.log(Object.keys(taller));
 // TODO: Object.values — imprime solo los valores
 console.log('Manejo de valores del objeto');
 console.log(Object.values(taller));
+
 // TODO: Object.entries — recorre con for..of e imprime "campo: valor" de cada propiedad
-console.log('Manejo de objetos por for of para entries')
-for(const [campo,valor] of Object.entries(taller)){
-console.log('${campo}: ${valor}');
+console.log('Manejo de objetos por for of para entries');
+for (const [campo, valor] of Object.entries(taller)) {
+  console.log(`${campo}: ${valor}`); // Corregido: se usaron acentos graves ` `
 }
+
 // TODO: JSON.stringify — convierte `taller` a texto (guárdalo en `textoJson`) e imprímelo
-console.log('Manejo de conversion de objeto a string')
-const tectoJson = JSON.stringify(taller, null, 2);
+console.log('Manejo de conversion de objeto a string');
+const textoJson = JSON.stringify(taller, null, 2); // Corregido: se cambió 'tectoJson' por 'textoJson'
 console.log(textoJson);
 console.log('tipo: ', typeof textoJson);
+
 // TODO: JSON.parse — convierte `textoJson` de vuelta a objeto (guárdalo en `objetoDeVuelta`)
 //       e imprime `objetoDeVuelta.nombre`
-console.log('Inverso de cadena a JSON')
-const objetoDeVuelta =JSON.parse(textoJson);
+console.log('Inverso de cadena a JSON');
+const objetoDeVuelta = JSON.parse(textoJson);
 console.log('tipo: ', typeof objetoDeVuelta);
 console.log(objetoDeVuelta.nombre);
-console.log('${campo}: ${valor}');

@@ -41,8 +41,12 @@ formObjeto.addEventListener('submit', (evento) => {
             const jsonString = JSON.stringify(taller);
             const objetoReconstruido = JSON.parse(jsonString);
 
-            resultado = `JSON String: ${jsonString}\n\nObjeto deserializado: ${objetoReconstruido.nombre} (Instructor: ${objetoReconstruido.instructor})`;
-            break;
+            resultado = [
+              textoJson,
+              '',
+            `tipo: ${typeof objetoDeVuelta}`,
+            objetoDeVuelta.nombre
+            ].join('\n');
 
         default:
             resultado = 'Operación no válida';
