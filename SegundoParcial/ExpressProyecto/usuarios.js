@@ -16,3 +16,7 @@ async function crear({nombre, correo, contrasenaHash, boleta, rol}) {
          VALUES (?, ?, ?, ?, ?)`, [nombre, correo, contrasenaHash, boleta, rol || 'alumno']);
     return obtenerPorId(info.insertId);
 }
+
+async function actualizar(id, {nombre, correo, rol}) {
+    
+}
