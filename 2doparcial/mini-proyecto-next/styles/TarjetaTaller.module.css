@@ -1,0 +1,55 @@
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px;
+  border: 1px solid #fce7f3;
+  border-top: 4px solid #fb7185; /* Borde superior en rosa coral pastel */
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(244, 114, 182, 0.08);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(244, 114, 182, 0.15);
+}
+
+.titulo {
+  margin: 4px 0;
+  color: #831843;
+}
+
+.dato {
+  margin: 0;
+  font-size: 14px;
+  color: #9d174d;
+}
+
+.etiqueta,
+.etiquetaPasado {
+  align-self: flex-start;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.etiqueta {
+  background: #ffe4e6; 
+  color: #be185d;
+}
+
+.etiquetaPasado {
+  background: #fce7f3; 
+  color: #9d174d;
+}
+
+.enlace {
+  margin-top: auto;
+  padding-top: 8px;
+  color: #be185d;
+  font-weight: 600;
+  text-decoration: none;
+}
