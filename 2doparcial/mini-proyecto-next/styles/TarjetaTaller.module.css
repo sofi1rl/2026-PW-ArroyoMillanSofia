@@ -1,55 +1,81 @@
 .tarjeta {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding: 16px;
-  border: 1px solid #fce7f3;
-  border-top: 4px solid #fb7185; /* Borde superior en rosa coral pastel */
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(244, 114, 182, 0.08);
-  transition: transform 0.15s, box-shadow 0.15s;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #fbcfe8;
+  border-top: none;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #fff1f2 100%);
+  box-shadow: 0 2px 6px rgba(131, 24, 67, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tarjeta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #f472b6, #fb7185);
 }
 
 .tarjeta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(244, 114, 182, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(131, 24, 67, 0.1);
 }
 
 .titulo {
-  margin: 4px 0;
+  margin: 6px 0 2px;
   color: #831843;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .dato {
   margin: 0;
   font-size: 14px;
   color: #9d174d;
+  line-height: 1.4;
 }
 
 .etiqueta,
 .etiquetaPasado {
   align-self: flex-start;
-  padding: 2px 8px;
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 
 .etiqueta {
-  background: #ffe4e6; 
-  color: #be185d;
+  background: #f472b6; 
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(244, 114, 182, 0.3);
 }
 
 .etiquetaPasado {
   background: #fce7f3; 
-  color: #9d174d;
+  color: #831843;
 }
 
 .enlace {
   margin-top: auto;
-  padding-top: 8px;
-  color: #be185d;
+  padding-top: 12px;
+  color: #db2777;
   font-weight: 600;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.enlace:hover {
+  text-decoration: underline;
 }

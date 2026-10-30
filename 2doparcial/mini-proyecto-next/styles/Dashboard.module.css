@@ -1,106 +1,168 @@
 .contenedor {
-  max-width: 1050px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 32px 24px;
+  padding: 40px 20px;
 }
 
 .encabezado {
-  padding-bottom: 28px;
-  border-bottom: 1px solid #fce7f3; /* Rosa muy sutil */
+  text-align: center;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.encabezado::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #db2777;
+  margin: 16px auto 0;
+  border-radius: 2px;
 }
 
 .encabezado h1 {
-  margin: 0 0 20px;
-  font-size: clamp(30px, 4vw, 40px);
-  color: #db2777; /* Rosa principal suave pero legible */
+  margin: 0 0 16px;
+  font-size: clamp(32px, 5vw, 42px);
+  color: #db2777;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .encabezado p,
 .modulos > p {
   margin: 0;
-  font-size: 20px;
-  color: #9d174d; /* Tono ciruela suave para texto */
+  font-size: 18px;
+  color: #9d174d;
 }
 
 .modulos {
-  padding: 24px 0 44px;
+  padding: 12px 0 32px;
 }
 
 .modulos h2 {
-  margin: 12px 0 20px;
-  font-size: 30px;
+  margin: 0 0 12px;
+  font-size: 26px;
   color: #db2777;
 }
 
 .modulos > p {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .tarjetas {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .tarjeta {
-  display: flex;
-  min-height: 200px;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 24px;
-  border: 1px solid #fce7f3;
-  border-radius: 12px;
-  background-color: #fff1f2; /* Fondo rosa pastel clarito */
+  display: grid;
+  grid-template-columns: 240px 1fr auto;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 32px;
+  border: none;
+  border-left: 6px solid;
+  border-radius: 0 16px 16px 0;
+  background-color: #fff1f2;
+  box-shadow: 0 4px 12px rgba(219, 39, 119, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta:hover {
+  transform: translateX(4px);
+  box-shadow: 0 6px 16px rgba(219, 39, 119, 0.1);
 }
 
 .tarjeta h3 {
-  margin: 20px 0;
-  font-size: 24px;
+  margin: 0;
+  font-size: 22px;
   color: #be185d;
 }
 
 .tarjeta p {
-  margin: 0 0 24px;
+  margin: 0;
   color: #9d174d;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .boton {
-  margin-top: auto;
-  padding: 10px 16px;
-  border-radius: 6px;
+  margin-top: 0;
+  padding: 12px 24px;
+  border-radius: 30px;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  white-space: nowrap;
 }
 
 .boton:hover {
   filter: brightness(0.95);
 }
 
-/* Tonos pasteles diferenciados para cada botón */
+/* Aplicación de colores mediante bordes laterales y botones */
 .usuarios {
-  background: #f472b6; /* Rosa pastel vibrante */
+  border-left-color: #f472b6;
+  background: linear-gradient(135deg, #fff1f2 0%, #fdf2f8 100%);
+}
+.usuarios .boton {
+  background: #f472b6;
 }
 
 .talleres {
-  background: #fb7185; /* Coral / Rosa pastel cálido */
+  border-left-color: #fb7185;
+  background: linear-gradient(135deg, #fff1f2 0%, #fff1f2 100%);
+}
+.talleres .boton {
+  background: #fb7185;
 }
 
 .asistencia {
-  background: #e879f9; /* Lila / Rosa pastel violeta */
+  border-left-color: #e879f9;
+  background: linear-gradient(135deg, #fff1f2 0%, #fae8ff 100%);
+}
+.asistencia .boton {
+  background: #e879f9;
 }
 
 .pie {
-  padding-top: 20px;
-  border-top: 1px solid #fce7f3;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px dashed #fce7f3;
   color: #9d174d;
   text-align: center;
+  font-size: 15px;
 }
 
-@media (max-width: 760px) {
-  .tarjetas {
+@media (max-width: 850px) {
+  .tarjeta {
     grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 24px;
+    border-left: none;
+    border-top: 6px solid;
+    border-radius: 16px;
+  }
+  
+  .usuarios {
+    border-top-color: #f472b6;
+  }
+  .talleres {
+    border-top-color: #fb7185;
+  }
+  .asistencia {
+    border-top-color: #e879f9;
+  }
+
+  .tarjeta:hover {
+    transform: translateY(-4px);
+  }
+
+  .boton {
+    width: 100%;
+    text-align: center;
   }
 }
