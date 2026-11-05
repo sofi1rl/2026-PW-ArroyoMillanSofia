@@ -1,0 +1,25 @@
+// Reglas de validación de los datos de un usuario. Son las mismas que usa el front
+// (mini-proyecto-next/lib/validaciones.js) y las que Pruebas de Software prueba con Jest.
+// El backend las vuelve a revisar porque una petición con Postman se salta el front.
+
+function validarNombre(nombre) {
+  if (typeof nombre !== 'string') return false;
+  return /^\p{L}+(?: +\p{L}+){0,3}$/u.test(nombre.trim());
+}
+
+function validarCorreo(correo) {
+  if (typeof correo !== 'string') return false;
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo.trim());
+}
+
+function validarBoleta(boleta) {
+  if (typeof boleta !== 'string') return false;
+  return /^\d{10}$/.test(boleta.trim());
+}
+
+function validarContrasena(contrasena) {
+  if (typeof contrasena !== 'string') return false;
+  return contrasena.length >= 8;
+}
+
+module.exports = { validarNombre, validarCorreo, validarBoleta, validarContrasena };
