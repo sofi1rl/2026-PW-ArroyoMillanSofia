@@ -1,6 +1,6 @@
 {
   "info": {
-    "name": "CECyT9 - Mi backend - Diego Muñoz",
+    "name": "CECyT9 - Mi backend - Sofía Arroyo",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
@@ -173,7 +173,7 @@
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"nombre\": \"Taller de Postman\",\n  \"instructor\": \"Ing. Diego Muñoz\",\n  \"fecha\": \"2026-11-20\",\n  \"cupo\": 15\n}",
+              "raw": "{\n  \"nombre\": \"Taller de Postman\",\n  \"instructor\": \"Ing. Sofía Arroyo\",\n  \"fecha\": \"2026-11-20\",\n  \"cupo\": 15\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -262,7 +262,7 @@
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"taller_id\": \"{{tallerId}}\",\n  \"nombre_alumno\": \"Diego Muñoz Gutiérrez\",\n  \"boleta\": \"2026090099\"\n}",
+              "raw": "{\n  \"taller_id\": \"{{tallerId}}\",\n  \"nombre_alumno\": \"Sofía Arroyo Milán\",\n  \"boleta\": \"2026090099\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -335,7 +335,7 @@
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"nombre_alumno\": \"Diego Muñoz Gutiérrez\"\n}",
+              "raw": "{\n  \"nombre_alumno\": \"Sofía Arroyo Milán\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -377,7 +377,7 @@
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"taller_id\": \"00000000-0000-0000-0000-000000000000\",\n  \"nombre_alumno\": \"Diego Muñoz Gutiérrez\",\n  \"boleta\": \"2026090099\"\n}",
+              "raw": "{\n  \"taller_id\": \"00000000-0000-0000-0000-000000000000\",\n  \"nombre_alumno\": \"Sofía Arroyo Milán\",\n  \"boleta\": \"2026090099\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -456,7 +456,7 @@
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"nombre\": \"Diego Muñoz Gutiérrez\",\n  \"correo\": \"diego.munoz@alumno.ipn.mx\",\n  \"contrasena\": \"Segura2026\",\n  \"boleta\": \"2026090099\"\n}",
+              "raw": "{\n  \"nombre\": \"Sofía Arroyo Milán\",\n  \"correo\": \"sarroyom2401@alumno.ipn.mx\",\n  \"contrasena\": \"Segura2026\",\n  \"boleta\": \"2026090099\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -556,7 +556,7 @@
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"nombre\": \"Diego Muñoz Gutiérrez\",\n  \"correo\": \"diego.munoz@alumno.ipn.mx\",\n  \"contrasena\": \"Segura2026\",\n  \"boleta\": \"2026090099\"\n}",
+              "raw": "{\n  \"nombre\": \"Sofía Arroyo Milán\",\n  \"correo\": \"sarroyom2401@alumno.ipn.mx\",\n  \"contrasena\": \"Segura2026\",\n  \"boleta\": \"2026090099\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -598,7 +598,7 @@
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"nombre\": \"Diego Muñoz Gutiérrez\",\n  \"correo\": \"correo-sin-arroba\",\n  \"contrasena\": \"Segura2026\",\n  \"boleta\": \"2026090099\"\n}",
+              "raw": "{\n  \"nombre\": \"Sofía Arroyo Milán\",\n  \"correo\": \"correo-sin-arroba\",\n  \"contrasena\": \"Segura2026\",\n  \"boleta\": \"2026090099\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -640,7 +640,7 @@
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"nombre\": \"Diego Muñoz Gutiérrez\",\n  \"correo\": \"diego.munoz@alumno.ipn.mx\",\n  \"contrasena\": \"Segura2026\",\n  \"boleta\": \"123\"\n}",
+              "raw": "{\n  \"nombre\": \"Sofía Arroyo Millán\",\n  \"correo\": \"sarroyom2401@alumno.ipn.mx\",\n  \"contrasena\": \"Segura2026\",\n  \"boleta\": \"123\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -682,7 +682,7 @@
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"nombre\": \"Diego Muñoz Gutiérrez\",\n  \"correo\": \"diego.munoz@alumno.ipn.mx\",\n  \"contrasena\": \"corta\",\n  \"boleta\": \"2026090099\"\n}",
+              "raw": "{\n  \"nombre\": \"Sofía Arroyo Millán\",\n  \"correo\": \"sarroyom2401@alumno.ipn.mx\",\n  \"contrasena\": \"corta\",\n  \"boleta\": \"2026090099\"\n}",
               "options": {
                 "raw": {
                   "language": "json"

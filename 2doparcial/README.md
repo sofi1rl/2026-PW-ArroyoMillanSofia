@@ -1,6 +1,6 @@
 # Segundo parcial - Registro de Asistencia CECyT 9
 
-Proyecto de **Programación Web** (Diego Muñoz Gutiérrez). Tiene dos partes que se ejecutan por separado:
+Proyecto de **Programación Web** (Sofía Arroyo Millán). Tiene dos partes que se ejecutan por separado:
 
 | Carpeta | Qué es | Puerto | Cómo se lanza |
 |---|---|---|---|
