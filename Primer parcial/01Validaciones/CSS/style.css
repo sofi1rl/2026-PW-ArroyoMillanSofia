@@ -4,8 +4,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #1f2937;
-    background-color: #f4f6f7;
+    color: #4a4046;
+    background-color: #fff0f3; 
 }
 /*cambios en el index 2*/
 .container {
@@ -14,23 +14,25 @@ body {
     padding: 30px;
 }
 .header {
-    background-color: #0f172a;
-    color: white;
+    background-color: #ffb5a7; 
+    color: #4a4046;
     padding: 25px;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 181, 167, 0.2);
 }
 .content {
-    background-color: white;
+    background-color: #ffffff;
     margin-top: 20px;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
 }
 .tablas_ejercicios {
     margin-top: 20px;
 }
 .table_content {
-    background-color: white;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
 }
@@ -40,16 +42,16 @@ body {
 }
 .tabla th,
 .tabla td {
-    border: 1px solid #d1d5db;
+    border: 1px solid #f8edeb;
     padding: 12px;
     text-align: left;
 }
 .tabla th {
-    background-color: #0f172a;
-    color: white;
+    background-color: #fcd5ce;
+    color: #4a4046;
 }
 .tabla a {
-    color: #0f172a;
+    color: #d87093;
     text-decoration: none;
     font-weight: bold;
 }
@@ -58,13 +60,13 @@ body {
 }
 /*Cambios en la interfaz de talleres*/
 header {
-    background-color: #0f172a;
-    color: white;
+    background-color: #ffb5a7;
+    color: #4a4046;
     padding: 1.5rem;
     text-align: center;
 }
 header a {
-    color: white;
+    color: #4a4046;
 }
 main {
     max-width: 960px;
@@ -74,7 +76,7 @@ main {
 footer {
     text-align: center;
     padding: 1rem;
-    color: #6b7280;
+    color: #8c7880;
     font-size: 0.875rem;
 }
 .catalogo {
@@ -84,16 +86,18 @@ footer {
 }
 .tarjeta {
     padding: 1rem;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #f8edeb;
     border-radius: 0.5rem;
-    background-color: white;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(248, 237, 235, 0.5);
 }
 .tarjeta h2 {
     margin-top: 0;
     font-size: 1.1rem;
+    color: #d87093;
 }
 .tarjeta a {
-    color: #0f172a;
+    color: #d87093;
     text-decoration: none;
 }
 .tarjeta a:hover {
@@ -101,55 +105,63 @@ footer {
 }
 /*cambios en el registro del formulario*/
 .formulario-registro {
-    background-color: white;
+    background-color: #ffffff;
     max-width: 500px;
     margin: 30px auto;
     padding: 25px;
     border-radius: 10px;
-    border: 1px solid #d1d5db;
+    border: 1px solid #f8edeb;
+    box-shadow: 0 4px 6px rgba(248, 237, 235, 0.6);
 }
 .formulario-registro input {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
-    border: 1px solid #cbd5e1;
+    border: 1px solid #fcd5ce;
     border-radius: 5px;
+    background-color: #fff9f9;
+}
+.formulario-registro input:focus {
+    outline: none;
+    border-color: #ffb5a7;
 }
 .formulario-registro button {
     width: 100%;
     padding: 12px;
-    background-color: #0f172a;
-    color: white;
+    background-color: #ffb5a7;
+    color: #4a4046;
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 .formulario-registro button:hover {
-    background-color: #334155;
+    background-color: #fcd5ce;
 }
 .registro-fallido {
-    color: #b91c1c;
-    background-color: #fee2e2;
+    color: #991b1b;
+    background-color: #ffe5e5;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
 }
 .formulario-registro input.invalido {
-    border: 2px solid #dc2626;
+    border: 2px solid #f87171;
     background-color: #fef2f2;
 }
 .error {
     display: block;
-    color: #dc2626;
+    color: #ef4444;
     font-size: 14px;
     margin-top: -10px;
     margin-bottom: 10px;
 }
 .registro-exitoso {
     color: #166534;
-    background-color: #dcfce7;
+    background-color: #e8f5e9;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
@@ -164,40 +176,22 @@ footer {
 
 #tablas-talleres th,
 #tablas-talleres td {
-    border: 1px solid #d1d5db;
+    border: 1px solid #f8edeb;
     padding: 12px;
     text-align: left;
 }
 
 #tablas-talleres th {
-    background-color: #0f172a;
-    color: white;
+    background-color: #fcd5ce;
+    color: #4a4046;
 }
 
 #tablas-talleres tr:hover {
-    background-color: #f1f5f9;
+    background-color: #fff5f3;
 }
 
 .tabla-scroll {
     width: 100%;
     overflow-x: auto;
-    margin-top: 50px; 
-    margin-bottom: 50px;
-}
-/*Ajustes para los a*/
-.shofolov, 
-.shofolov:visited {
-    display: inline-block;
-    padding: 10px 18px;
-    margin: 15px;
-    text-decoration: none !important;
-    color: #ffffff !important;
-    background-color: #567EBB;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-.shofolov:hover {
-    background-color: #3b5998;
-    color: #ffffff !important;
+    margin-top: 50px
 }
