@@ -1,0 +1,118 @@
+:root {
+    --bg-pink: #fff0f3;
+    --card-pink: #ffccd5;
+    --accent-pink: #ffb3c1;
+    --text-color: #5b404c;
+    --white: #ffffff;
+    --border-pink: #f8bbd0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-pink);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--white);
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+header p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* Contenedor principal */
+main {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    border: 1px solid var(--border-pink);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+}
+
+.tarjeta h2 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+}
+
+.tarjeta h2 a {
+    color: #d81b60;
+    text-decoration: none;
+}
+
+.tarjeta h2 a:hover {
+    text-decoration: underline;
+}
+
+.tarjeta p {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+
+.shofolov {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: var(--card-pink);
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: background 0.3s;
+}
+
+.shofolov:hover {
+    background-color: var(--accent-pink);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--white);
+    font-size: 0.85rem;
+    color: var(--text-color);
+    border-top: 1px solid var(--border-pink);
+    margin-top: auto;
+}

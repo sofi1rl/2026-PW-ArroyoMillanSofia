@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios con Node</title>
+    <link rel="stylesheet" href="../01Validaciones/CSS/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Ejercicios con Node y JavaScript</h1>
+        </div>
+
+        <!-- Sección de Arreglos -->
+        <div class="tablas_ejercicios" style="margin-bottom: 25px;">
+            <h2>Arreglos del código <code>01-arreglos.js</code></h2>
+            <p style="margin-bottom: 15px; font-size: 0.95rem;">Datos de prueba con JavaScript</p>
+            
+            <div class="table_content">
+                <table class="tabla" id="tablas-talleres">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Instructor</th>
+                            <th>Cupo</th>
+                            <th>Inscritos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+            <form id="form-arreglos" style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px;">
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <label for="operacion-arreglo">Elige qué dato quieres obtener</label>
+                    <select name="operacion-arreglo" id="operacion-arreglo" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+                        <option value="forEach">ForEach - Lista Simple</option>
+                        <option value="map">map - Copia solo nombres</option>
+                        <option value="filter">filter - Filtrar talleres con cupo lleno</option>
+                        <option value="find">find - Buscar por el nombre del instructor</option>
+                    </select>
+                </div>
+                <button type="submit" style="padding: 10px 15px; background-color: #ffccd5; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; width: fit-content;">Ejecutar</button>
+            </form>
+
+            <output class="resultado" id="resultado-arreglo" for="form-arreglo" style="display: block; margin-top: 15px; font-family: monospace;"></output>
+        </div>
+
+        <div class="tablas_ejercicios">
+            <h2>Manejo de Objetos y JSON</h2>
+            <p style="margin-bottom: 15px; font-size: 0.95rem;">Edita el taller y elige qué operación aplicarle:</p>
+
+            <form id="form-objeto" style="display: flex; flex-direction: column; gap: 15px;">
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <label for="obj-nombre">Nombre</label>
+                    <input type="text" id="obj-nombre" name="obj-nombre" value="Introducción a Python" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <label for="obj-instructor">Instructor</label>
+                    <input type="text" id="obj-instructor" name="obj-instructor" value="Ing. María López" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <label for="obj-cupo">Cupo</label>
+                    <input type="text" id="obj-cupo" name="obj-cupo" value="25" min="0" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <label for="obj-inscritos">Inscritos</label>
+                    <input type="text" id="obj-inscritos" name="obj-inscritos" value="25" min="0" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <label for="operacion-objeto">Operación a realizar</label>
+                    <select name="operacion-objeto" id="operacion-objeto" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+                        <option value="keys">Object.keys</option>
+                        <option value="values">Object.values</option>
+                        <option value="entries">Object.entries</option>
+                        <option value="stringify">Object.stringify</option>
+                        <option value="roundtrip">Ida y vuelta de cadena a JSON</option>
+                    </select>
+                </div>
+
+                <button type="submit" style="padding: 10px 15px; background-color: #ffccd5; border: none; border
