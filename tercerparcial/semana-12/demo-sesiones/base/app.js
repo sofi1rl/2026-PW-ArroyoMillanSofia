@@ -74,8 +74,8 @@ function crearApp(config, pool) {
   });
   
   // Paso 2 (en clase): iniciar sesión. Paso 7 (en clase): regenerar el id al entrar.
-  app.post('/api/login', async(req, res, next)=>{
-    try{
+  app.post('/api/login', async(req, res, next)=> {
+    try {
       const {usurio, contrasena} = req.body || {};
       const datos = await usuarios.verificar(usuario,contrasena);
       if(!datos) return res.status(401).json({error: 'Usuario o contraseña incorrecto'});
@@ -88,15 +88,15 @@ function crearApp(config, pool) {
         req. session.ultimoUso = Date.now();
         req.session.save((error)=>{
           if (erro) return next(error);
-          res.json({usuario; datos, sesionAntes : antes, sesionDespues ; idCorto(req.sessionID)});
+          res.json({usuario, datos, sesionAntes : antes, sesionDespues ; idCorto(req.sessionID)});
         });
       };
       if (config.regenerarAlEntrar){
         req.sesion.regenerate((error)=>(error ? next(error): guarda()));
       }else{
         guardar();
-      }
-    }catch(error){
+
+       } catch (error) {
       next(error);
     }
   });
@@ -158,3 +158,6 @@ function crearApp(config, pool) {
 }
 
 module.exports = { crearApp, NOMBRE_COOKIE };
+//infoografia del uso de jwtpara el inicio de sesion para el domingo 15 de nov
+
+//desarrollar la implementacion del codigo para realizAR la autenticacion y pruebas de sesiones conforme al documento para el archivo demo.js
