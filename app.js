@@ -84,11 +84,6 @@ function crearApp(config, pool) {
     next();
   }
 
-  // 401: "no sé quién eres" (no hay sesión o ya venció).
-  function requiereSesion(req, res, next) {
-    // Paso 1 (en clase)
-    return pendiente(1)(req, res, next);
-  }
 
   // 403: "sé quién eres, pero no tienes permiso".
     function requiereRol(rol) {

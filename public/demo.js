@@ -1,6 +1,9 @@
 // La página solo hace fetch a la API. El navegador manda la cookie solo (misma página, mismo servidor).
+
+// Obtiene un elemento del DOM por su id de forma rápida.
 const $ = (id) => document.getElementById(id);
 
+// Envía una petición HTTP con fetch y devuelve el status y el JSON (si tiene).
 async function llamar(metodo, url, cuerpo) {
   const opciones = { method: metodo, headers: {} };
   if (cuerpo) {
@@ -13,6 +16,7 @@ async function llamar(metodo, url, cuerpo) {
   return { status: respuesta.status, datos };
 }
 
+// Agrega un registro visual al inicio de la bitácora con el código y respuesta JSON.
 function anotar(metodo, url, status, datos) {
   const li = document.createElement('li');
   const clase = status < 300 ? 'ok' : status === 401 ? 'e401' : status === 403 ? 'e403' : 'error';
@@ -23,6 +27,7 @@ function anotar(metodo, url, status, datos) {
   $('bitacora').prepend(li);
 }
 
+// Consulta /api/sesion para mostrar si hay sesión activa, su expiración y document.cookie.
 async function refrescarEstado() {
   const { status, datos } = await llamar('GET', '/api/sesion');
   const estado = $('estado');
@@ -36,6 +41,7 @@ async function refrescarEstado() {
   $('cookie-js').textContent = document.cookie || '(vacío)';
 }
 
+// Obtiene las sesiones activas desde diagnóstico, indica el almacén y llena la tabla.
 async function refrescarSesiones() {
   const { datos: respuesta } = await llamar('GET', '/api/diagnostico/sesiones');
   const datos = respuesta ? respuesta.sesiones : [];
@@ -63,6 +69,7 @@ async function refrescarSesiones() {
   }
 }
 
+// Actualiza tanto el estado de la sesión actual como la tabla de sesiones.
 async function refrescarTodo() {
   await refrescarEstado();
   await refrescarSesiones();
